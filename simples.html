@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+<title>PyScript - Executando Aplicações Python no FrontEnd</title>
+
+</head>
+
+
+<!--  Este script adiciona a camada para interpretação do Python -->
+<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+
+
+<!-- Aqui adicionamos as bibliotecas que utilizaremos em nosso projeto para configurar o ambiente virtual -->
+<py-env>
+</py-env>
+
+<body style='padding:10px;'>
+<div style = 'margin-left:10px;'>
+
+<!-- Tag para início da aplicação Python -->
+<h3>
+<py-script>
+from random import randint
+
+n1 = randint(2,100)
+s1 = str(n1)
+
+frase = "Jesus é " + s1 + " vezes mais pica que Zeus!"
+print(frase)
+
+n2 = randint(2,100)
+s2 = str(n2)
+
+total_n = n1 * n2
+total_s = str(total_n)
+
+frase2 = "Ouroboros é " + s2 + " vezes mais pica que Jesus e " + total_s + " vezes mais pica que Zeus!"
+print(frase2)
+</py-script>
+</div>
+</h3>
+</body>
+</html>
